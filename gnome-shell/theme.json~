@@ -1,0 +1,10 @@
+{ 
+   "shell-theme" : {
+       "name": "Old Steampunk", 
+       "author": "samriggs", 
+       "version": "0.2",
+       "type":   "custom",
+       "thumbnail": "preview_oldsteampunk.png", 
+       "url": "http://samriggs.deviantart.com/" 
+   }
+} 

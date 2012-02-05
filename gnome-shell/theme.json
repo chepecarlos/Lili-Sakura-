@@ -1,0 +1,10 @@
+{ 
+   "shell-theme" : {
+       "name": "Lili Sakura", 
+       "author": "chepecarlos", 
+       "version": "0.1 alfa",
+       "type":   "custom",
+       "thumbnail": "preview_oldsteampunk.png", 
+       "url": "alswblog.org" 
+   }
+} 
