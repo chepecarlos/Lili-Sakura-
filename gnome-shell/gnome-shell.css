@@ -19,6 +19,12 @@
 
 /*GNOME Shell Steampunk theme designed by Sam Riggs*/
 
+
+/* Colores base gradientes
+ * start: #9370D8  147,112,216;
+ *   end: #800080  128,0,128;
+ */
+
 stage {
     font-family: cantarell, sans-serif;
 }
@@ -327,29 +333,27 @@ StTooltip StLabel {
 /*background color*/
 /*Clase del fondo del shell*/
 #overview {
-    spacing: 12px;
-    background-color: rgba(143, 0, 255,0.4);/*color de fondo shell*/
-    background-image: url("pointer.png");/*Imagen de fondo del shell*/
-    background-position: 0px 25px;
-    border: 1px solid rgba(0,0,0,0);
+    background-color: rgba(143, 0, 255,0.2);/*color de fondo shell*/
+    background-image: url("pointer.png");/*Imagen de la parte superior*/
+    background-position: 0px 25px;/*Pocision inicial de la imagen*/
+    border: 1px;
+    border-image: url("overview.png")  5000 5000 5000 5000;/*fondo del tema*/
 }
 
+/*de la barra lateral */
 .workspaces-view {
     color: white;
     spacing: 25px;
 }
 
 .workspace-controls {
-    visible-width: 32px; /* Amount visible before hovering */
+    visible-width: 100px; /* Amount visible before hovering */
 }
 /*workspace box on the right side that shows all the workspaces*/
 .workspace-thumbnails-background {
-    border-image: url("workspaceimage.png");
-    border: 1px solid rgba(0,0,0,0.1);
-    border-right: 0px;
-    border-radius: 9px 0px 0px 9px;
-    padding: 8px;
-    box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.1);
+    border-image: url("workspaceimage.png"); 
+    border: 30px solid rgba(0,0,0,0.1);
+    border-radius: 30px 0px 0px 30px;
 }
 
 .workspace-thumbnails-background:rtl {
@@ -359,11 +363,13 @@ StTooltip StLabel {
 }
 
 .workspace-thumbnails {
-    spacing: 10px;
+    spacing: 15px;
 }
 
 .workspace-thumbnail-indicator {
-    outline: 3px solid #231905;
+    outline: 5px solid #6b007b;
+    border-image: url("thumbnail.png"); 
+    border: 30px solid rgba(0,0,0,1);
 }
 /*buttons for all the windows that pop up in avtivites and themes*/
 .window-caption {
@@ -533,26 +539,27 @@ StTooltip StLabel {
 .results-container {
     spacing: 4px;
 }
-/*search button for google and wikapedia*/
+/*Los botones para buscar en  google y wikapedia*/
 .dash-search-button {
-    border: 1px solid rgba(30,22,14,0.5);
+    border: 2px solid rgba(128,0,128,0.9);
     background-gradient-direction: vertical;
-    background-gradient-start: #ebdbc6;
-    background-gradient-end: #c2a586;
-/*    border: 1px solid #808080;*/
-    border-radius: 4px;
+    background-gradient-start: #9370D8;
+    background-gradient-end: #800080;
+    border-radius: 10px;
     height: 32px;
     width: 200px;
-   box-shadow: 0px 0px 4px 2px rgba(33,33,33,0.3);
+    font-weight:bold;
+    box-shadow: 0px 0px 4px 2px rgba(33,33,33,0.3);
 
 }
 /*search buttons for google and wikapedia*/
 .dash-search-button:selected,
 .dash-search-button:hover {
-    border: 1px solid rgba(30,22,14,0.5);
+    border: 2px solid rgba(128,0,128,0.5);
     background-gradient-direction: vertical;
-    background-gradient-start: #f3e8da;
-    background-gradient-end: #d9af81;
+    background-gradient-start: #ffffff;
+    background-gradient-end: #800080;
+    font-weight:bold;
     box-shadow: 0px 0px 4px 2px rgba(33,33,33,0.3);
 }
 
@@ -562,31 +569,36 @@ StTooltip StLabel {
 }
 
 /* Apps */
-/*changed size of icons so they are not so big and ugly*/
 
 .icon-grid {
     spacing: 18px;
     -shell-grid-item-size: 35px;
 }
-
+/*Iconos del area de aplicaciones*/
 .all-app {
     padding: 16px 25px 16px 16px;
     spacing: 20px;
+    background-gradient-direction: vertical;
+    background-gradient-start:rgba(147,112,216,0.8);
+    background-gradient-end: rgba(128,9,128,0.4);
+    border: 7px  rgba(128,0,128,0.8);
+    border-radius: 20px;
 }
 
 .all-app .icon-grid {
-    -shell-grid-item-size: 59px;
+    -shell-grid-item-size: 100px;
 }
 
 .all-app .overview-icon {
-    icon-size: 48px;
+    icon-size: 100px;/*48 base*/
+    color: rgba(10,10,10.1);
 }
 
-.app-filter {
-    font: 14px sans-serif;
+.app-filter {/*aqui*/
+    font: 20px sans-serif;
     font-weight: bold;
     height: 40px;
-    color: rgba(44,44,44,0.7);
+    color: rgba(128,0,120,1);
     width: 200px;
     padding-left: 8px;
 }
@@ -597,7 +609,7 @@ StTooltip StLabel {
 }
 
 .app-filter:selected {
-    color: #fff;
+    color: #ffffff;
     background-image: url("newfilter-selected.png");
     background-position: 190px 10px;
 }
@@ -978,12 +990,7 @@ StTooltip StLabel {
 /* Message Tray */
 /*add grunge background the same as the top panel, outline it with dark and alpha it to 50%*/
 #message-tray {
-    border-image: url("traybottom.png") 0 2560 0 0 repeat;
-    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.6);
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    color: rgba(68,47,10,0.8); 
+    border-image: url("traybottom.png") 0 3000 0 0 repeat;
     height: 36px;
 }
 
@@ -1252,8 +1259,8 @@ StTooltip StLabel {
 }
 
 .ripple-box {
-    width: 52px;
-    height: 52px;
+    width: 150px;
+    height: 150px;
     background-image: url("corner-ripple.png");
 }
 
