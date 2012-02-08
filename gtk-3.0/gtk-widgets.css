@@ -1,0 +1,360 @@
+* {
+	font: Liberation Sans 9;
+	engine:solidity;
+	background-color:@bg_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-radius:3;
+	-solidity-gradient-top-color:rgba(0,0,0,0.0);
+	-solidity-gradient-bottom-color:rgba(0,0,0,0.0);
+	-solidity-reflection-color:rgba(255,255,255,0.15); /* a=0 -> not glossy */
+	-solidity-highlight-color:rgba(255,255,255,0.5);
+	-solidity-shadow-color:rgba(0,0,0,0.15);
+}
+
+*:insensitive {
+	border-color:@dark_bg_color;
+	color:@disabled_text_color;
+}
+*:selected {
+	background-color:@selected_bg_color;
+}
+
+/* Background */
+.background {
+	background-color: @bg_color;
+}
+
+/* Separator */
+.separator {
+	-solidity-style:2;
+}
+
+/* Button */
+.button {
+	background-color:@button_normal_bg_color;
+	-solidity-reflection-color:rgba(255,255,255,0.2); /* a=0 -> not glossy */
+}	
+.button:prelight {
+	background-color:@button_prelight_bg_color;
+}
+.button:active, .button:active:prelight {
+	background-color:@button_active_bg_color;
+	-solidity-reflection-color:rgba(255,255,255,0.1); /* a=0 -> not glossy */
+}
+.button:insensitive {
+	background-color:@button_insensitive_bg_color;
+}
+.button.default {
+	border-color:@dark_color;
+	background-color:@button_normal_bg_color;
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+	-solidity-reflection-color:rgba(255,255,255,0.2); /* a=0 -> not glossy */
+}
+.button.default:prelight {
+	border-color:@dark_color;
+	background-color:@button_prelight_bg_color;
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+}
+.button.default:active, .button.default:active:prelight {
+	border-color:@dark_color;
+	background-color:@button_active_bg_color;
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+	-solidity-reflection-color:rgba(255,255,255,0.1); /* a=0 -> not glossy */
+}
+.button.default:insensitive {
+	border-color:@dark_bg_color;
+	background-color:@bg_color;
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+}
+
+/* Entry */
+.entry {
+	background-color:@base_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+}
+.entry:focused {
+	background-color:@base_color;
+	color:@text_color;
+	border-color:@selected_bg_color;
+}
+.entry:selected, .entry:selected:focused {
+	background-color:@selected_bg_color;
+	color: @selected_fg_color;
+	border-color:@dark_color;
+}
+
+.entry:insensitive {
+	background-color:@bg_color;
+	color:@disabled_text_color;
+	border-color:@dark_bg_color;
+}
+
+/* CheckButton and RadioButton */
+.check, .radio {
+	background-color:@button_normal_bg_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+	-solidity-reflection-color:rgba(255,255,255,0.2); /* a=0 -> not glossy */
+}
+.check:prelight, .radio:prelight {
+	background-color:@button_prelight_bg_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+}
+.check:active, .check:active:prelight, .radio:active, .radio:active:prelight {
+	background-color:@selected_bg_color;
+	color:@selected_fg_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-shadow-color:rgba(255,255,255,0.15); /* render shadow as highlight */
+	-solidity-reflection-color:rgba(255,255,255,0.1); /* a=0 -> not glossy */
+}
+.check:insensitive, .check:insensitive:active, .radio:insensitive, .radio:insensitive:active {
+	background-color:@bg_color;
+	color:@disabled_text_color;
+	border-color:@dark_bg_color;
+	-solidity-shadow-color:rgba(0,0,0,0.15);
+}
+.menuitem.check, .menuitem.radio {
+	background-color:@button_normal_bg_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+	-solidity-reflection-color:rgba(255,255,255,0.2); /* a=0 -> not glossy */
+}
+.menuitem.check:active, .menuitem.radio:active {
+	background-color:@selected_bg_color;
+	color:@selected_fg_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-shadow-color:rgba(255,255,255,0.15);
+	-solidity-reflection-color:rgba(255,255,255,0.1); /* a=0 -> not glossy */
+}
+.menuitem.check:prelight, .menuitem.radio:prelight {
+	background-color:@button_prelight_bg_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-shadow-color:rgba(255,255,255,0.5); /* render shadow as highlight */
+}
+.menuitem.check:insensitive, .menuitem.radio:insensitive {
+	background-color:@bg_color;
+	color:@disabled_text_color;
+	border-color:@dark_bg_color;
+	-solidity-shadow-color:rgba(0,0,0,0.15);
+}
+
+/* Expander */
+.expander {
+	color: @text_color;
+}
+
+/* Switch */
+GtkSwitch.trough {
+	background-color:@trough_bg_color;
+	color:@text_color;
+}
+GtkSwitch.trough:active {
+	background-color:@selected_bg_color;
+	color:@selected_fg_color;
+}
+GtkSwitch.trough:insensitive {
+	background-color:@bg_color;
+	border-color:@dark_bg_color;
+	color:@disabled_text_color;
+}
+GtkSwitch.slider {
+	background-color:@button_normal_bg_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-reflection-color:rgba(255,255,255,0.2); /* a=0 -> not glossy */
+}
+GtkSwitch.slider:active {
+    background-color:@button_normal_bg_color;
+    border-color:shade (@bg_color, 0.7);
+    -solidity-reflection-color:rgba(255,255,255,0.1); /* a=0 -> not glossy */
+}
+GtkSwitch.slider:insensitive {
+	background-color:@bg_color;
+	border-color:@dark_bg_color;
+}
+
+/* trough and slider */
+.trough {
+	background-color:@trough_bg_color;
+}
+.slider {
+	background-color:@bg_color;
+	-solidity-reflection-color:rgba(255,255,255,0.2); /* a=0 -> not glossy */
+}
+.slider:prelight {
+	background-color:@button_prelight_bg_color;
+}
+.slider:active, .slider:active:prelight {
+	background-color:@button_active_bg_color;
+	-solidity-reflection-color:rgba(255,255,255,0.1); /* a=0 -> not glossy */
+}
+
+/* Scrollbar */
+GtkScrollbar {
+	-GtkScrollbar-has-backward-stepper:5;
+	-GtkScrollbar-has-forward-stepper:5;
+	-solidity-highlight-color:rgba(255,255,255,0.15);
+	-solidity-reflection-color:rgba(255,255,255,0.1);
+}
+.scrollbar.trough {
+	background-color:@trough_bg_color;
+	border-color:shade (@bg_color, 0.7);
+}
+.scrollbar {
+	background-color:@selected_bg_color;
+	border-color:@selected_bg_color;
+}
+.scrollbar:prelight {
+	background-color:shade (@selected_bg_color, 1.05);
+}
+.scrollbar:active, .scrollbar:active:prelight {
+	background-color:shade (@selected_bg_color, 1.02);
+}
+
+/* ProgressBar */
+.progressbar, .view .progressbar {
+	color:@selected_fg_color;
+	background-color:@selected_bg_color;
+	-solidity-highlight-color:rgba(255,255,255,0.15);
+	-solidity-reflection-color:rgba(255,255,255,0.1);
+}
+.progressbar.trough {
+	background-color:@trough_bg_color;
+}
+
+/* ToolBar and InfoBar */
+.toolbar {
+	padding:5;
+}
+.toolbar, .toolbar *{
+	background-color:@bg_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+	-solidity-highlight-color:rgba(255,255,255,0.1);
+}
+.toolbar .button:prelight {
+	background-color:@button_prelight_bg_color;	
+}
+.toolbar .button:active, .toolbar .button:active:prelight {
+	background-color:@button_active_bg_color;
+	border-color:@dark_color;
+	color:@selected_fg_color;
+}
+.toolbar .entry {
+	background-color:@base_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+}
+.info {
+    background-color: @info_bg_color;
+    color: @info_fg_color;
+}
+
+.warning {
+    background-color: @warning_bg_color;
+    color: @warning_fg_color;
+}
+
+.question {
+    background-color: @question_bg_color;
+    color: @question_fg_color;
+}
+
+.error {
+    background-color: @error_bg_color;
+    color: @error_fg_color;
+}
+.info .entry {
+	background-color:@base_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+}
+
+/* Tooltip */
+.tooltip {
+	background-color:@tooltip_bg_color;
+	color: @tooltip_fg_color;
+}
+
+/* Notebook */
+.notebook tab {
+	background-color:@trough_bg_color;
+	border-color:shade (@bg_color, 0.7);
+}
+.notebook, .notebook tab:active {
+	background-color:shade (@bg_color, 1.02);
+	border-color:@dark_color;
+	-solidity-reflection-color:rgba(255,255,255,0.2); /* a=0 -> not glossy */
+}
+
+/* TreeView and IconView */
+.view {
+	background-color:@base_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+}
+.cell:selected {
+	background-color:@selected_bg_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+}
+.rubberband {
+	background-color:@base_color;
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+}
+
+/* Menus */
+GtkMenu {
+	-GtkMenu-horizontal-offset:-1;
+}
+.menubar {
+	background-color:shade (@bg_color, 1.08);
+	color:@text_color;
+	border-color:shade (@bg_color, 0.7);
+}
+
+.menu {
+	padding:0;
+	background-color:@bg_color;
+	color:@text_color;
+	border-color:@selected_bg_color;
+}
+.menuitem {
+	background-color:@selected_bg_color;
+	color:@selected_fg_color;
+	-solidity-highlight-color:rgba(255,255,255,0.15);
+	-solidity-reflection-color:rgba(255,255,255,0.1);
+}
+
+/* fixes (you probably want copy those if you're creating your own theme) */
+GtkProgressBar {
+	padding:1;
+}
+GtkNotebook {
+	-GtkNotebook-tab-overlap:1;
+}
+.notebook tab {
+	padding:1;
+}
+GtkMenu {
+	-GtkMenu-vertical-padding:0;
+}
+GtkRange {
+	-GtkRange-trough-border:0;
+	-GtkRange-trough-under-steppers:0;
+}
+GtkSwitch {
+	padding:0;
+}
+.separator {
+	-GtkWidget-wide-separators:true;
+	-GtkWidget-separator-width:2;
+	-GtkWidget-separator-height:2;
+}
