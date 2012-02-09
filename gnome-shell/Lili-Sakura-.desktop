@@ -1,0 +1,15 @@
+
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Lili-Sakura-
+Comment=Lili-Sakura
+Encoding=UTF-8
+
+Name[en_US]=Lili-Sakura-
+
+[X-GNOME-Metatheme]
+GtkTheme=Lili-Sakura-
+MetacityTheme=Lili-Sakura
+IconTheme=Faenza-Darker
+CursorTheme=oxy-white
+ButtonLayout=maximize,minimize,close:
