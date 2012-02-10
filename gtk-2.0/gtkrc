@@ -1,6 +1,6 @@
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#363636\nselected_bg_color:#5394A1\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#FFFFFF\ntooltip_bg_color:#DBDBDB\nlink_color:#1E90FF"
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#f07746\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#F2F1F0\ntooltip_bg_color:#000000\nlink_color:#DD4814"
 
-gtk-icon-sizes = "panel-menu=22,22:gtk-button=12,12"
+gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
 
 gtk-auto-mnemonics = 1
 
@@ -32,8 +32,8 @@ style "default" {
 
 	GtkScrollbar::activate-slider = 1
 	GtkScrollbar::trough-border = 0
-	GtkScrollbar::slider-width = 12
-	GtkScrollbar::min-slider-length = 28
+	GtkScrollbar::slider-width = 13
+	GtkScrollbar::min-slider-length = 31
 
 	GtkMenuBar::internal-padding = 0
 	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
@@ -101,7 +101,7 @@ style "default" {
 		glazestyle = 0
 		default_button_color = shade (1.1, @selected_bg_color)
 		gradient_shades = {1.1, 1.0, 1.0, 0.9}
-		roundness = 2
+		roundness = 4
 		lightborder_shade = 1.26
 		lightborderstyle = 1
 		listviewstyle = 2
@@ -121,8 +121,8 @@ style "default" {
 
 style "dark"
 {
-	color["bg_color_dark"] 	= "#0C0C0C"
-  	color["fg_color_dark"] 	= "#DBDBDB"
+	color["bg_color_dark"] 	= "#3c3b37"
+  	color["fg_color_dark"] 	= "#dfdbd2"
   	color["selected_fg_color_dark"] = "#ffffff"
 
   	fg[NORMAL]        = @fg_color_dark
@@ -134,7 +134,7 @@ style "dark"
 	bg[NORMAL]        = @bg_color_dark
  	bg[ACTIVE]	  = shade (0.8, @bg_color_dark)
   	bg[SELECTED]      = @selected_bg_color
- 	bg[PRELIGHT]      = shade (1.0, "#0C0C0C")
+ 	bg[PRELIGHT]      = shade (1.0, "#4D4C48")
   	bg[INSENSITIVE]   = shade (0.85, @bg_color_dark)
   	
 	text[NORMAL]      = @fg_color_dark
@@ -229,7 +229,7 @@ style "scrollbar" = "button" {
 	engine "murrine"
 	{
 		border_shades = {0.95, 0.90}
-		roundness = 2
+		roundness = 20
 		contrast = 1.0
 		trough_shades = {0.92, 0.98}
 		lightborder_shade = 1.3
@@ -261,7 +261,7 @@ style "scale" = "button" {
 	engine "murrine" {
 		contrast = 0.6
 		border_shades = {0.9, 0.8}
-		roundness = 2
+		roundness = 5
 		lightborder_shade = 1.32
 		gradient_shades = {1.1, 1.0, 1.0, 0.8}
 		handlestyle = 2
@@ -285,7 +285,7 @@ style "notebook" {
 	ythickness = 2
 	
 	engine "murrine" {
-		roundness = 2
+		roundness = 3
 		contrast = 0.8
 		focusstyle = 2
 		lightborder_shade = 1.16
@@ -336,9 +336,9 @@ style "menu" = "dark" {
 	xthickness = 0
 	ythickness = 0
 
-	bg[NORMAL] = "#0C0C0C"
-	bg[INSENSITIVE] = "#0C0C0C"
-	fg[INSENSITIVE]   = shade (0.54, "#43423F")
+	bg[NORMAL] = "#43423f"
+	bg[INSENSITIVE] = "#43423f"
+	fg[INSENSITIVE]   = shade (0.54, "#43423f")
 
 	engine "murrine"
 	{
@@ -382,7 +382,7 @@ style "scale_menu_item" = "scale" {
 	bg[INSENSITIVE] = shade (0.9, @bg_color)
 
 	engine "murrine" {
-		roundness = 2
+		roundness = 20
 		border_shades = {1.4, 1.4}
 		reliefstyle = 0
 		lightborder_shade = 1.36
@@ -445,7 +445,7 @@ style "progressbar" {
 
 	engine "murrine" {
 		#trough_shades = {0.98, 1.02}
-		roundness = 2
+		roundness = 8
 		lightborderstyle = 1
 		lightborder_shade = 1.26
 		border_shades = {0.95, 0.85}
@@ -503,12 +503,12 @@ style "radiocheck"  = "button" {
 }
 
 style "tooltips" {
-       xthickness = 5
-       ythickness = 5
+	xthickness = 4
+	ythickness = 4
 
 	bg[NORMAL]        = @tooltip_bg_color
 	fg[NORMAL]        = @tooltip_fg_color
-	bg[SELECTED]      = "#FFFFFF"
+	bg[SELECTED]      = "#000000"
 
 	engine "murrine" {
 		rgba = TRUE
@@ -540,7 +540,7 @@ style "calendar_menu_item" = "calendar" {
 
 style "iconview" {
 	engine "murrine" {
-		roundness = 2
+		roundness = 6
 		border_shades = {1.16, 1.0}
 		glow_shade = 1.1
 		glowstyle = 5
