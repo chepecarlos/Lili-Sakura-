@@ -1,8 +1,8 @@
 { 
    "shell-theme" : {
        "name": "Lili Sakura", 
-       "author": "chepecarlos", 
-       "version": "0.1 alfa",
+       "author": "chepecarlos <chepecarlos@alswblog.org>", 
+       "version": "1.0",
        "type":   "custom",
        "thumbnail": "ScreenshotLiliSakura.png", 
        "url": "alswblog.org" 
