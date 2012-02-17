@@ -1,0 +1,42 @@
+Lili-Sakura is a Gnome Shell theme. Specially designed for my angel, the love of my life.
+Designed based on the anime series Card Captor Sakura. It is compatible with the latest Gnome Shell 3.2.
+
+---
+
+Installation Instructions:
+
+Extract the zip file to the themes directory i.e. "~/.themes/" or "/usr/share/themes/" or use Gnome Tweak Tool to install.
+
+Install the User Theme Extension and use the Gnome Tweak tool to choose the themes.
+
+To install the Gnome Shell theme without the User Theme Extension,
+
+1. First backup your Gnome Shell theme directory i.e. "/usr/share/gnome-shell/theme/".
+
+2. Extract the zip file and rename "gnome-shell" directory to "theme",
+
+3. Copy it to "/usr/share/gnome-shell/".
+
+4. Restart GNOME Shell by pressing "Alt+F2", then type r and press Enter.
+
+---
+
+To install Gnome Tweak Tool in Ubuntu, open the terminal and type,
+
+sudo apt-get install gnome-tweak-tool  gnome-shell-extensions-user-theme 
+
+---
+
+To install User Theme Extension and Gnome Tweak Tool in Fedora, open the terminal and type,
+
+su -c "yum install gnome-shell-extensions-user-theme gnome-tweak-tool"
+
+---
+
+Warning:
+
+This theme is not compatible with old Gnome Shell 3.0 (e.g.-Fedora 15). I'm not responsible if you try to use it on old Gnome Shell and things break.
+
+---
+
+License: GPL
