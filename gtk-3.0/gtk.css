@@ -3,7 +3,7 @@
 @define-color fg_color #4c4c4c;
 @define-color base_color #ffffff;
 @define-color text_color #3C3C3C;
-@define-color selected_bg_color #f07746;
+@define-color selected_bg_color #9370D8;/*pollo f07746*/
 @define-color selected_fg_color #ffffff;
 @define-color tooltip_bg_color #000000;
 @define-color tooltip_fg_color #ffffff;
@@ -29,6 +29,6 @@
 
 @import url("gtk-widgets.css");
 @import url("apps/gnome-panel.css");
-@import url("apps/gnome-terminal.css");
+@import url("apps/gnome-applications.css");
 @import url("apps/nautilus.css");
 @import url("apps/unity.css");
