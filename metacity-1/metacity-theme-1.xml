@@ -32,6 +32,9 @@
 </frame_geometry>
 
 <draw_ops name="title-text-focused">
+<image filename="pixmaps.active_title_right.png" x="((width + title_width)/2)" y="0" width="object_width" height="height"/>
+<image filename="pixmaps.active_title_left.png" x="(((width - title_width)/2)- object_width)" y="0" width="object_width" height="height"/>
+<image filename="pixmaps.active_title.png" x="(((width - title_width)/2))" y="0" width="title_width" height="height"/>
 <title color="#777" x="(width - title_width) / 2 +1" y="(height - title_height) / 2 + 1"/>
 <title color="#fff" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
 </draw_ops>
@@ -48,9 +51,8 @@
   <image filename="pixmaps.active_top_left.png" x="0" y="0" width="object_width" height="object_height"/>
   <image filename="pixmaps.active_top.png" x="3" y="0" width="width - 6" height="object_height"/>
   <image filename="pixmaps.active_top_right.png" x="width - object_width" y="0" width="object_width" height="object_height"/>
-  <image filename="pixmaps.active_title_right.png" x="((width + title_width)/2)" y="0" width="object_width" height="height"/>
-  <image filename="pixmaps.active_title_left.png" x="(((width - title_width)/2)- object_width)" y="0" width="object_width" height="height"/>
-  <image filename="pixmaps.active_title.png" x="(((width - title_width)/2))" y="0" width="title_width" height="height"/>
+ 
+ 
 </draw_ops>
 
 <draw_ops name="title-unfocused">
