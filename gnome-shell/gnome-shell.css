@@ -28,6 +28,7 @@ stage {
     font-family: cantarell, sans-serif;
 }
 
+/* links */
 .shell-link {
     color: #0000ff;
     text-decoration: underline;
@@ -384,6 +385,8 @@ StTooltip StLabel {
     -boxpointer-gap: 4px
 }
 
+/* User Menu */
+
 #panelUserMenu {
     spacing: 4px;
 }
@@ -562,7 +565,6 @@ StTooltip StLabel {
     background: #eaeaea;
 }
 
-
 #searchEntry:focus {
     color: #d8d8d8;
     font-weight: bold;
@@ -572,6 +574,8 @@ StTooltip StLabel {
     icon-size: 1.4em;
     color: #ffffff;
 }
+
+/* View Tabs */
 
 .view-tab-title {
     color: #ffffff;
@@ -750,6 +754,7 @@ StTooltip StLabel {
     background-image: url("calendar-arrow-right.png");
     background-position: 10px 10px;
 }
+
 .app-filter:focus {
     outline: 1px solid #aaa;
 }
@@ -778,6 +783,8 @@ StTooltip StLabel {
     transition-duration: 100;
     text-align: center
 }
+
+/* Contacts */
 
 .contact {
     width: 252px; /* Same width as two normal results + spacing */
